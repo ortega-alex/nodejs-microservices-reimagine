@@ -1,0 +1,29 @@
+cd Downloads //o ubicacion de la imagen 
+curl -X POST -H 'Content-Type: image/jpg' --data-binary @tux.jpg  http://localhost:3000/uploads/tux.jpg
+
+//head es una consulta sin cuerpo que permite saver si una ruta es accesible
+curl --head 'http://localhost:3000/uploads/tux.jpg'
+
+
+/*version 3 reimagine **/
+
+curl --head http://localhost:3000/uploads/test.png
+
+r.db("reimagine").table("images").nth(0)
+
+curl -H 'Content-Type: image/png' --data-binary @hydra.png http://localhost:3000/uploads/test.png
+
+hget hydratest.png size
+
+localhost:3000/uploads/test.png?height=100&greyscale=y
+
+curl -v -X DELETE htttp://localhost:3000/uploads/test.png
+
+
+/* 16 */
+install -D chai mochai 
+"chai": "^4.1.2",
+"chai-http": "^4.2.0",
+"mocha": "^5.2.0",
+
+npm i nyc -g

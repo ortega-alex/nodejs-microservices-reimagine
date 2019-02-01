@@ -1,0 +1,7 @@
+{
+	"db": {
+		"host": "localhost",
+		"db": "reimagine"
+	},
+	"mysql": "mysql://root:root@localhost/reimagine"
+}
